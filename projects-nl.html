@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+window.onscroll = function() {
+    var btn = document.getElementById("myBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    var images = document.querySelectorAll('img[tabindex="0"]');
+    var overlay = document.getElementById('overlay');
+    images.forEach(function(img) {
+        img.addEventListener('click', function() {
+            overlay.style.display = 'block';
+            img.focus();
+        });
+        img.addEventListener('focus', function() {
+            overlay.style.display = 'block';
+        });
+        img.addEventListener('blur', function() {
+            overlay.style.display = 'none';
+        });
+    });
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        document.activeElement.blur();
+    });
+});
+</script>
+
+<body>
+<a id="top"></a>
+<div class="options">
+        <img src="icons/horizontal.png" alt="menu" class="options-icon">
+        <div class="options-content">
+            <a href="projects.html"><img src="icons/flag.png" alt="language" class="language-icon"></a>
+            <a href="index-nl.html">thuis</a>
+            <a href="info-nl.html">info</a>
+            <a href="contact-nl.html">Contact</a>
+            <a href="https://github.com/ThomasClarisse/about-me-rework">github</a>
+        </div>
+    </div>
+
+        <h1>Projecten</h1>
+
+    <div class="project-item">
+            <h2>project 1: rekenmachine</h2>
+            <p>Dit is een project dat ik heb gemaakt met behulp van PHP, HTML en CSS. Het is een eenvoudige rekenmachine die in de webbrowser draait.
+                De rekenmachine kan basisbewerkingen uitvoeren, zoals optellen, aftrekken, vermenigvuldigen en delen.
+                De rekenmachine kan ook een foutmelding geven wanneer je probeert te delen door 0 of een letter in te voeren in plaats van een cijfer.
+            </p>
+            <br><br>
+            <img src="projects/calc-home.png" alt="rekenmachine thuis scherm" width="300" height="200" tabindex="0">
+            <img src="projects/calc-add.png" alt="rekenmachine die een bewerking uitvoert" width="300" height="200" tabindex="0">
+            <img src="projects/calc-wrong.png" alt="rekenmachine foutmelding" width="300" height="200" tabindex="0">
+        </div>
+        <br><br>
+        <div class="project-item">
+            <h2>project 2: steen papier schaar</h2>
+            <p>Dit is een project dat ik met een klasgenoot moest maken voor ons groepsproject.
+                Het is een eenvoudig steen, papier, schaar spel, gemaakt met PHP, HTML en CSS.
+                Je kunt kiezen of je tegen een andere speler (op hetzelfde apparaat) of tegen de computer wil spelen.
+            </p><br><br>
+            <img src="projects/rps-home.png" alt="steen papier schaar thuis scherm" width="300" height="200" tabindex="0">
+            <img src="projects/rps-computer.png" alt="steen papier schaar tegen de computer" width="300" height="200" tabindex="0">
+            <img src="projects/rps-pvp.png" alt="steen papier schaar tegen een speler" width="300" height="200" tabindex="0">
+        </div>
+        <br><br>
+        <div class="project-item">
+            <h2>Project 3: Galgje</h2>
+            <p>Dit project is ook het resultaat van een groepsopdracht met mij en mijn klasgenoot. We moesten een volledig werkend galgje spel maken met behulp van PHP, HTML en CSS.
+                Het spel biedt de mogelijkheid om je eigen woord te kiezen of de computer een willekeurig woord te laten kiezen uit een array.
+                Je hebt een beperkt aantal pogingen om het woord te raden. Lukt het niet, dan verlies je het spel.
+            </p>
+            <br><br>
+            <img src="projects/galgje-home.png" alt="galgje thuis scherm" width="300" height="200" tabindex="0">
+            <img src="projects/galgje-own.png" alt="galgje woordkeuze" width="300" height="200" tabindex="0">
+            <img src="projects/galgje-play.png" alt="galgje spel bezig" width="300" height="200" tabindex="0">
+        </div>
+        <br><br>
+        <div class="project-item">
+            <h2>Project 4: sql database</h2>
+            <p>Dit project bestaat uit een reeks databases gemaakt in MySQL.
+                De eerste database is een eenvoudige database met de planeten in ons zonnestelsel en de gegevens van iedere planeet.
+                De tweede database is iets complexer, omdat deze voor een fictieve streamingdienst genaamd "Netland" is. Deze database bevat tabellen voor films en de gegevens van iedere film.
+                De derde database is voor dezelfde streamingdienst, maar bevat deze keer tabellen voor series en alle bijbehorende gegevens.
+            </p><br><br>
+            <img src="projects/sql-sterrenstelsel.png" alt="sql zonnestelsel database" width="300" height="200" tabindex="0">
+            <img src="projects/sql-films.png" alt="sql film database" width="300" height="200" tabindex="0">
+            <img src="projects/sql-series.png" alt="sql series database" width="300" height="200" tabindex="0">
+        </div><br><br>
+        <div class="project-item">
+            <h2>Project 5: netland administrator website</h2>
+            <p>In dit project moest ik een administrator paneel maken voor de eerder genoemde Netland-database.
+                Het adminpaneel biedt de mogelijkheid om films en series te sorteren op titel (a-z en z-a) of op beoordeling (hoog naar of laag en laag naar hoog).
+                Je kunt ook rechtstreeks vanuit het adminpaneel nieuwe films en series aan de database toevoegen.
+                Bestaande gegevens bewerken is ook mogelijk vanuit de detailpagina, je komt hier door op de titel van de film of serie te klikken.
+                Het volledige adminpaneel is alleen toegankelijk na het inloggen met de juiste inloggegevens.
+                Het adminpaneel is gemaakt met behulp van PHP, HTML, CSS en PDO voor de databaseverbinding.
+            </p><br><br>
+            <img src="projects/pdo-login.png" alt="netland administrator login" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-home.png" alt="netland administrator paneel begin scherm" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-film-detail.png" alt="netland admin-paneel detail pagina" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-edit.png" alt="netland admin-paneel media bewerking scherm" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-add.png" alt="netland admin-paneel media toevoegen" width="300" height="200" tabindex="0">
+        </div><br><br>
+    <div id="overlay"></div>
+
+
+    <img src="icons/arrow.png" alt="back to top" id="myBtn" onclick="location.href='#top'">
+</body>
+</html>

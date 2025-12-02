@@ -42,6 +42,82 @@ document.addEventListener('DOMContentLoaded', function() {
 <body>
 <a id="top"></a>
 
+<div class="options">
+        <img src="icons/horizontal.png" alt="menu" class="options-icon">
+        <div class="options-content">
+            <a href="projects-nl.html"><img src="icons/circle.png" alt="language" class="language-icon"></a>
+            <a href="index.html">Home</a>
+            <a href="info.html">info</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/ThomasClarisse/about-me-rework">github</a>
+        </div>
+    </div>
+
+    <h1>Projects</h1>
+
+    <div class="project-item">
+            <h2>project 1: calculator </h2>
+            <p>This is a project i made using php, html and css, it is a simple calculator running in the web browser.
+                The calculator can do basic operations such as addition, subtraction, multiplication and division.
+                It can also give an error message when you try to divide by 0 or enter a letter instead of a number.
+            </p>
+            <br><br>
+            <img src="projects/calc-home.png" alt="calculator home screen" width="300" height="200" tabindex="0">
+            <img src="projects/calc-add.png" alt="calculator performing an operation" width="300" height="200" tabindex="0">
+            <img src="projects/calc-wrong.png" alt="calculator error message" width="300" height="200" tabindex="0">
+        </div>
+        <br><br>
+        <div class="project-item">
+            <h2>project 2: rock paper scissors</h2>
+            <p>This is a project that me and a classmade had to make for our group project.
+                It's a simple rock paper scissors game made with php, html and css.
+                You can choose wether you play against another player (on the same device) or against the computer.
+            </p><br><br>
+            <img src="projects/rps-home.png" alt="rock paper scissors home screen" width="300" height="200" tabindex="0">
+            <img src="projects/rps-computer.png" alt="rock paper scissors vs computer" width="300" height="200" tabindex="0">
+            <img src="projects/rps-pvp.png" alt="rock paper scissors pvp" width="300" height="200" tabindex="0">
+        </div>
+        <br><br>
+        <div class="project-item">
+            <h2>Project 3: Hangman</h2>
+            <p>This project is also the result of a group exercise with me and my classmate, we had to make a fully working hangman game sing php, html and css
+                The game has the option to choose your own word or have the computer choose a random word from a predifined array.
+                You have a limited amount of tries to guess the word, if you fail you lose the game.
+            </p>
+            <br><br>
+            <img src="projects/galgje-home.png" alt="hangman home screen" width="300" height="200" tabindex="0">
+            <img src="projects/galgje-own.png" alt="hangman word choise screen" width="300" height="200" tabindex="0">
+            <img src="projects/galgje-play.png" alt="hangman playing screen" width="300" height="200" tabindex="0">
+        </div>
+        <br><br>
+        <div class="project-item">
+            <h2>Project 4: sql database</h2>
+            <p>This project is a series of databases made in mySQL.
+                The first database is a simple database containing the planets in our solar system and their respective data.
+                The second database is slightly more complex as it is for a fictional steaming service called "netland", it contains tables for movies and their data.
+                The third database is for the same streaming service but this time it contains tables for shows and all their data.
+            </p><br><br>
+            <img src="projects/sql-sterrenstelsel.png" alt="sql solar system database" width="300" height="200" tabindex="0">
+            <img src="projects/sql-films.png" alt="sql movies database" width="300" height="200" tabindex="0">
+            <img src="projects/sql-series.png" alt="sql shows database" width="300" height="200" tabindex="0">
+        </div><br><br>
+        <div class="project-item">
+            <h2>Project 5: netland admin panel</h2>
+            <p>In this project i had to make a admin panel for the previously mentioned netland database.
+                The admin panel has a option to sort the movies and shows by their title (a-z and z-a) or by their rating (highest to lowest and lowest to highest).
+                You can also add new movies and shows to the database directly from the admin panel, editing the allready existing entries is also possible once you click on a title to show it's details.
+                The entire admin panel is only accessible after logging in with the correct credentials.
+                The admin panel is made using php, html, css and pdo for the database connection.
+            </p><br><br>
+            <img src="projects/pdo-login.png" alt="netland admin panel login screen" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-home.png" alt="netland admin panel home screen" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-film-detail.png" alt="netland admin panel media detail screen" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-edit.png" alt="netland admin panel edit media screen" width="300" height="200" tabindex="0">
+            <img src="projects/pdo-add.png" alt="netland admin panel add media screen" width="300" height="200" tabindex="0">
+        </div><br><br>
+    <div id="overlay"></div>
+
     
+    <img src="icons/arrow.png" alt="back to top" id="myBtn" onclick="location.href='#top'">
 </body>
 </html>
